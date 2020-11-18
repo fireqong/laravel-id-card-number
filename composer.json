@@ -1,0 +1,40 @@
+{
+    "name": "church/laravel-id-card-number",
+    "description": "id card number checker for laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "church",
+            "email": "church_qi@aliyun.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/config": "~5|^6|^7|^8",
+        "illuminate/filesystem": "~5|^6|^7|^8",
+        "illuminate/support": "~5|^6|^7|^8",
+        "illuminate/hashing": "~5|^6|^7|^8",
+        "illuminate/session": "~5|^6|^7|^8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Church\\IDCard\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Church\\IDCard\\Tests\\": "./tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Church\\IDCard\\ServiceProvider"
+            ]
+        }
+    }
+}
